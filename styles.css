@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@500&family=Prompt:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+}
+
+:root{
+    --clr-primary: #1E0E62;
+    --clr-secondary: #482BE7;
+    --bg: #F2F2F2;
+    
+    --ff-primary: 'DM Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bg);
+    padding: 30px 10s;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+.nav_list{
+    padding: 2rem;
+    
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 1px 20px;
+
+}
+ul li a:hover{
+    color: var(--clr-secondary);
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--clr-primary);
+}
+i:hover{
+    cursor: pointer;
+    color: var(--clr-secondary);
+}
+.sign_in{
+    font-weight: 500;
+    position: absolute;
+    margin-left: 59rem;
+}
+
+.sign_btn{
+    font-weight: 500;
+    color: white;
+    background-color: var(--clr-secondary);
+    border: none;
+    padding: 8px 24px 8px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.sign_btn:hover{
+    background-color: #2a244b;
+}
