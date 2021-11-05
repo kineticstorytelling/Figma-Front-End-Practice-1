@@ -110,13 +110,18 @@ h1{
     font-size: 1.375rem;
 }
 
-.ldng_pg_btn{
-    padding: .5rem 1.8rem .5rem 1.8rem;
+.pg_btn{
+    padding: 1.3rem 2.3rem 1.3rem 2.3rem;
     color: white;
     font-size: 20px;
     background-color: var(--clr-secondary);
     border: none;
     border-radius: 100px;
+    cursor: pointer;
+}
+.pg_btn:hover{
+    background-color: var(--clr-tertiary);
+    transition: all 0.2s ease-in-out;
 }
 
 h4{
@@ -124,4 +129,5 @@ h4{
     padding: 1%;
     font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
+    letter-spacing: .05rem;
 }
