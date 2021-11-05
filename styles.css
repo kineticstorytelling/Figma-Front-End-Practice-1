@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@500&family=Prompt:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@500&family=Poppins:wght@500&family=Prompt:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 
 *{
     box-sizing: border-box;
@@ -8,9 +9,9 @@
 }
 
 :root{
-    --clr-primary: #1E0E62;
-    --clr-secondary: #482BE7;
-    --bg: #F2F2F2;
+    --clr-primary: #15143966;
+    --clr-secondary: #25DAC5;
+    --clr-tertiary: #1E0E62;
     
     --ff-primary: 'DM Sans', sans-serif;
 }
@@ -18,8 +19,7 @@
 header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: var(--bg);
+    justify-content: center;
     padding: 30px 10s;
     flex-wrap: wrap;
 }
@@ -28,6 +28,7 @@ header{
     font-size: 24px;
     font-weight: 700;
     padding: 2rem;
+    color: var(--clr-tertiary);
 }
 
 .nav_list{
@@ -39,7 +40,9 @@ ul li {
     display: inline-block;
     list-style: none;
     padding: 1px 20px;
-
+    font-size: 18px;
+    position: relative;
+    left: 40%;
 }
 ul li a:hover{
     color: var(--clr-secondary);
@@ -47,6 +50,13 @@ ul li a:hover{
 
 ul li a{
     text-decoration: none;
+    color: #15143966;
+    position: relative;
+}
+
+i{
+    position: relative;
+    left: 40%;
     color: var(--clr-primary);
 }
 i:hover{
@@ -55,8 +65,9 @@ i:hover{
 }
 .sign_in{
     font-weight: 500;
-    position: absolute;
-    margin-left: 59rem;
+    position: relative;
+    margin-left: 25%;
+    color: var(--clr-primary);
 }
 
 .sign_btn{
@@ -68,8 +79,49 @@ i:hover{
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease-in;
+    position: relative;
+    margin-left: 2%;
 }
 
 .sign_btn:hover{
     background-color: #2a244b;
+}
+.hero{
+    min-height: 50vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    
+}
+
+h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--clr-tertiary);
+    padding: 5% 0 1% 0;
+}
+
+.hero p{
+    color: var(--clr-primary);
+    padding: 2% 32% 4% 32%;
+    text-align: center;
+    font-size: 1.375rem;
+}
+
+.ldng_pg_btn{
+    padding: .5rem 1.8rem .5rem 1.8rem;
+    color: white;
+    font-size: 20px;
+    background-color: var(--clr-secondary);
+    border: none;
+    border-radius: 100px;
+}
+
+h4{
+    color: var(--clr-secondary);
+    padding: 1%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
 }
