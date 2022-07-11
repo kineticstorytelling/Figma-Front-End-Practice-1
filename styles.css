@@ -7,6 +7,9 @@
     padding: 0;
     font-family: var(--ff-primary);
 }
+body{
+    background: lightblue;
+}
 
 :root{
     --clr-primary: #15143966;
@@ -130,4 +133,16 @@ h4{
     font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
     letter-spacing: .05rem;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+.curves{
+    background: #3c31dd;
 }
