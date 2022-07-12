@@ -149,7 +149,10 @@ section {
 .curves{
     background: #3c31dd;
 }
-.curve_btm {
+.curves p{
+    padding: 20px 40px;
+}
+/* .curve_btm {
     position: absolute;
     height: 225px;
     width: 100%;
@@ -175,4 +178,26 @@ section {
     background-color: #3c31dd;
     transform: translate(-4%, 40%);
     z-index: -1;
+} */
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(144% + 1.3px);
+    height: 148px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: #202731;
 }
