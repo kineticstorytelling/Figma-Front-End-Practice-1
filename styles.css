@@ -8,7 +8,8 @@
     font-family: var(--ff-primary);
 }
 body{
-    background: lightblue;
+    overflow-x: hidden;
+    background-color: #202731;
 }
 
 :root{
@@ -25,6 +26,7 @@ header{
     justify-content: center;
     padding: 30px 10s;
     flex-wrap: wrap;
+    background-color: lightblue;
 }
 
 .logo{
@@ -96,6 +98,7 @@ i:hover{
 	align-items: center;
 	justify-content: center;
     flex-direction: column;
+    background: lightblue;
     
 }
 
@@ -145,4 +148,31 @@ section {
 }
 .curves{
     background: #3c31dd;
+}
+.curve_btm {
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+.curve_btm::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #202731;
+    transform: translate(85%, 60%);
+}
+.curve_btm::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #3c31dd;
+    transform: translate(-4%, 40%);
+    z-index: -1;
 }
